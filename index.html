@@ -20,7 +20,7 @@
   <body>
     <div class="container">
       <div class="oval">
-        <h1>Current Weather</h1>
+        <h1 id="dayOfWeek">Current Weather</h1>
 
         <h3>Sioux Falls, South Dakota USA</h3>
         <section>
@@ -39,7 +39,13 @@
           <strong id="now"> 71° </strong>
           <button>F/C</button>
           <form>
-            <input type="search" placeholder="Change the city" />
+            <input
+              type="search"
+              placeholder="Change the city"
+              autofocus="on"
+              autocomplete="off"
+            />
+            <input type="submit" value="Search" id="searchButton" />
           </form>
         </section>
         <p>Forecast for the next five days HI/LO</p>
